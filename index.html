@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/league_of_legends_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+            <img id="seta_baixo_img" src="./img/-keyboard-arrow-down_90691.svg" alt="seta para baixo" />
+            <div id="menu_celular">
+                <ul>
+                    <li><a href="#">O JOGO</a></li>
+                    <li><a href="#campeoes">CAMPEÕES</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
+    
+                </ul>
+            </div>
+        <div class="container">
+            <img class="icon_riot_games" src="./img/riot-games.png" alt="Riot Games">
+            <img class="icon_lol" src="./img/lol-league-of-Legends-logo-1-1.png" alt="League of Legends">
+            <ul>
+                <li><a href="#">O JOGO</a></li>
+                <li><a href="#campeoes">CAMPEÕES</a></li>
+                <li id="noticia"><a href="#">NOTÍCIAS <img src="./img/-keyboard-arrow-down_90691.svg" alt="seta para baixo" /></a>
+                    <ul>
+                        <li><a href="#">Tudo</a></li>
+                        <li><a href="#">Atualizações Do Jogo</a></li>
+                        <li><a href="#">Esports</a></li>
+                        <li><a href="#">Dev</a></li>
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Mídia</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Comunidade</a></li>
+                        <li><a href="#">Riot Games</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">CONTATO</a></li>
+                <li id="comunidade"><a href="#">COMUNIDADE <img src="./img/-keyboard-arrow-down_90691.svg" alt="seta para baixo" /></a>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Fórum</a></li>
+                        <li><a href="#">Torneios Da Comunidade</a></li>
+                        <li><a href="#">Programa De Apoio A Torneios Da Comunidade</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="limite_video">
+        <video id="video_fundo" autoplay loop src="./img/hero-blurred-7572101a2ce5e003b66483b7fe5c5d36.webm" type="video/webm"></video>
+    </section>
+    <div class="border_video"></div>
+    <section class="video_lol">
+        <video autoplay loop src="./img/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4"></video>
+        <img class="img_league_of_legends" src="./img/LoL_Logo_Rendered_LARGE.png" alt="League of Legends">
+        <button class="btn_play">JOGUE DE GRAÇA</button>
+    </section>
+
+    <section id="news">
+        <p class="destaque_text">NOTÍCIAS EM DESTAQUE -- </p>
+        <div class="container_card">
+            <div class="card">
+                <div class="card_img"><img src="./img/news/[_450KB]_TFT_MID823_Comms-Article_GameplayOverview_ArticleBanner_1920x1080_v001.jpg" alt="Glitch"> </div>
+                <div class="card_div">  
+                    <h4>ATUALIZAÇÃO DO JOGO</h4>
+                    <h3>VISÃO GERAL DA MECÂNICADE GLITCH TOTAL!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem tenetur soluta, veritatis repudiandae quisquam delectus, suscipit vel quidem laboriosam deleniti eum porro quos doloribus dicta consequuntur enim veniam repellendus.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img"><img src="./img/news/TORNEIOS_DE_COMUNIDADE_TFT_T2.jpg" alt="Glitch"> </div>
+                <div class="card_div">  
+                    <h4>COMUNIDADE</h4>
+                    <h3>TORNEIOS DE COMUNIDADE - TEAMFIGHT TACTICS - 15/03 A 21/03</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur unde consectetur laboriosam facere, esse nisi est nihil perspiciatis corporis provident? Officia hic aliquid, aspernatur recusandae sapiente libero nam velit!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img"><img src="./img/news/header.jpg" alt="Glitch"> </div>
+                <div class="card_div">  
+                    <h4>DEV</h4>
+                    <h3>ORIGEM: PYKE</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iure reprehenderit doloribus dignissimos ab harum totam assumenda asperiores necessitatibus, ratione dolor voluptas aliquid, sequi laboriosam fugiat modi fugit eveniet consectetur.</p>
+                </div>
+            </div>
+            <button id="ver_mais">EXIBIR TUDO ></button>
+        </div>
+    </section>
+
+    <section id="campeoes">
+        <p class="campeoes_text">CAMPEÕES --</p>
+        <span class="camp_text">
+            <h3>ESCOLHA SEU</h3>
+            <h1>CAMPEÃO</h1>
+            <p>Quer você goste de se jogar na batalha, ajudar seus aliados ou os dois, existe um lugar para você no Rift.</p>
+            <div class="escolha_camp">
+                <button class="btn_camp ativado" id="assassinos">ASSASSINOS</button>
+                <button class="btn_camp" id="lutadores">LUTADORES</button>
+                <button class="btn_camp" id="magos">MAGOS</button>
+                <button class="btn_camp" id="atiradores">ATIRADORES</button>
+                <button class="btn_camp" id="suportes">SUPORTES</button>
+                <button class="btn_camp" id="tanques">TANQUES</button>
+            </div>
+            <img src="./img/camp/assassin-d64d3ffdda15e1eed637aefe6a2c7fee.png" alt="Akali League of Legends">
+            <span class="roda_1"></span>
+            <span class="roda_2"></span>
+            <div class="name_cont">
+                <h5>AKALI</h5>
+                <p>A Assassina Renegada</p>
+            </div>
+        </span>
+    </section>
+    <section id="contact">
+        <p class="contact_text">CONTATO --</p>
+        <div class="container">
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form >
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./img/instagram.png" alt="Logo do Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./img/facebook.png" alt="Logo do Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                                <img src="./img/youtube.png" alt="Logo do Youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua JavaScript nº 124, Vila HTML - São Paulo - SP
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; League of Legends - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

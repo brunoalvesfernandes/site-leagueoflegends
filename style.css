@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: rgb(24, 24, 24);
+    position: relative;
+    height: 80px;
+    width: 100%;
+    border: 3px rgb(54, 54, 54);
+    border-style: none none solid none;
+}
+
+.container{
+    display: inline-flex;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    color: #474747;
+    top: 30px;
+    position: relative;
+    display: inline-flex;
+    z-index: 5;
+}
+
+.container li {
+    display: inline;
+    text-align: center;
+    margin-right: 24px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container li:hover {
+
+    background-color: rgba(54, 54, 54, 0);
+    border: 5px solid aliceblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.container li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container ul li ul{
+    position: absolute;
+    display:inline-block;
+    visibility: hidden;
+    opacity: 0;
+    background-color:rgba(54, 54, 54) ;
+    border: 2px solid rgb(24, 24, 24);
+    border-top: none;
+    width: 250px;
+    height: 0;
+    margin: 5px;
+    font-size: 12px;
+    padding: 8px;
+    z-index: 5;
+    margin-top: 47px;
+    margin-left: -160px;
+    transition: all 0.8s;
+}
+
+.container ul li ul li{
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.container ul li ul li:hover{
+    border: 0;
+    background-color:rgba(172, 172, 172, 0.747);
+}
+
+.container .icon_riot_games {
+    height: 100px;
+    margin-right: 50px;
+    position: relative;
+    margin-left: 30px;
+    top: -38px;
+}
+
+#comunidade a img {
+    position: absolute;
+    height: 20px;
+    align-content: center;
+}
+
+#noticia a img {
+    position: absolute;
+    height: 20px;
+    align-content: center;
+}
+
+#noticia:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    height: 320px;
+}
+
+#comunidade:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    height: 170px;
+}
+
+.container .icon_lol {
+    top: -8px;
+    height: 35px;
+    position: relative;
+    right: 0;
+    margin-right: 50px;
+}
+
+.limite_video {
+    overflow: hidden;
+    height: 600px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#video_fundo {
+    width: 100%;
+}
+
+.video_lol {
+    position: absolute;
+    width: 100%;
+    left: calc(50% - 50%);
+    z-index: 1;
+    top: 150px;
+    height: 580px;
+    overflow: hidden;
+}
+.video_lol video {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.border_video {
+    position: absolute;
+    border: 1px solid rgb(104, 104, 104);
+    top: 130px;
+    width: 78%;
+    z-index: 2;
+    margin-left: 11%;
+}
+
+.img_league_of_legends{
+    position: absolute;
+    z-index: 3;
+    width: 35%;
+    right: calc( 50% - 17.5%);
+    margin-top: 8%;
+}
+
+#seta_baixo_img {
+    position: absolute;
+    height: 35px;
+    align-content: none;
+    display: none;
+    margin-top: 26px;
+    cursor: pointer;
+    z-index: 6;
+}
+
+header #checkbox {
+    display: none;
+}
+
+.btn_play {
+    position: absolute;
+    border: none;
+    background-color: rgba(24, 24, 24, 0.603);
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    z-index: 4;
+    text-align: center;
+    left: calc( 50% - 100px );
+    color: aliceblue;
+    margin-top: 25%;
+}
+
+.btn_play:hover {
+    background-color: rgba(41, 41, 41, 0.575);
+    transition: 0.2s;
+}
+
+.btn_play::after,
+.btn_play::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+
+.btn_play::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: rgb(104, 104, 104);
+    border-right-color: rgb(104, 104, 104);
+}
+
+.btn_play::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: rgb(104, 104, 104);
+    border-left-color: rgb(104, 104, 104);
+}
+
+.btn_play:hover:after,
+.btn_play:hover:before {
+    border-bottom-color: rgb(104, 104, 104);
+    border-right-color: rgb(104, 104, 104);
+    border-top-color: rgb(104, 104, 104);
+    border-left-color: rgb(104, 104, 104);
+    width: 100%;
+    height: 100%;
+}
+
+#news {
+    width: 100%;
+    height: 350px;
+    background-image: url("./img/fundo.png");
+    background-repeat:repeat;
+}
+
+.destaque_text,
+.campeoes_text,
+.contact_text {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.destaque_text {
+    left: -50px;
+    margin-top: 180px;
+}
+
+.campeoes_text {
+    left: -10px;
+    margin-top: 80px;
+}
+
+.contact_text {
+    margin-top: 80px;
+}
+
+#campeoes {
+    width: 100%;
+    height: 950px;
+    background-color: white;
+}
+
+#contact {
+    width: 100%;
+    height: 550px;
+    background-image: url("./img/fundo.png");
+    background-repeat:repeat-x;
+}
+
+.camp_text {
+    text-align: center;
+}
+
+.camp_text h3 {
+    font-size: 1.25rem;
+    margin-top: 100px;
+}
+
+.camp_text h1 {
+    font-size: calc(58.73px + 2.88vw);
+    font-style: italic;
+}
+
+.camp_text p {
+    font-size: 0.875rem;
+    position: relative;
+    max-width: 700px;
+    text-align: center;
+    padding: 0px 10%;
+    margin: 12px auto 0px;
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+}
+
+.roda_1,
+.roda_2 {
+    margin-top: 50px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: calc(50% - 250px);
+    border-radius: 50%;
+    border: 2px solid rgb(104, 104, 104);
+}
+
+.roda_2 {
+    border: 3px solid rgb(139, 163, 0);
+    border-top: none;
+    border-bottom: none;
+}
+
+.escolha_camp {
+    margin-top: 30px;
+    align-content: center;
+}
+
+.btn_camp {
+    padding: 12px;
+    border: 0px;
+    background-color: transparent;
+    color: rgb(186, 194, 204);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.btn_camp:hover {
+    color: rgb(0, 0, 0);
+}
+
+.ativado {
+    color: rgb(0, 0, 0);
+}
+
+.btn_camp:active {
+    color: rgb(0, 0, 0);
+}
+
+.camp_text img {
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    left: calc(50% - 300px);
+    z-index: 2;
+}
+
+.name_cont {
+    margin-top: 560px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    margin-bottom: 8px;
+    display: block;
+    width: 320px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: rgb(24, 24, 24);
+    color: #ecf6f1;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: rgb(61, 61, 61);
+}
+
+input:focus, textarea:focus {
+    outline-color: rgb(24, 24, 24);
+}
+
+.social-links img {
+    height: 24px;
+}
+
+footer {
+    position: absolute;
+    margin-top: -50px;
+    background-color: #f7f7f7;
+    padding: 2px;
+}
+
+#menu_celular {
+    position: absolute;
+    width: 100vh;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.8s;
+    background-color: rgb(24, 24, 24);
+    z-index: 6;
+    top: 0;
+}
+
+.card {
+    position: relative;
+    display:inline-flex;
+    border: 1px solid #b3b3b3;
+    padding: 5px;
+    margin-top: 100px;
+    z-index: 2;
+    cursor: pointer;
+    zoom: 85%;
+}
+
+.card:hover > .card_img img {
+    height: 250px;
+}
+
+.card_div {
+    display: block;
+    padding: 5px;
+    max-width: 300px;
+}
+
+.card_img {
+    z-index: 1;
+    overflow: hidden;
+    margin-left: -10px;
+    height: 220px;
+    width: 240px;
+}
+
+.container_card {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.card img {
+    
+}
+
+.card_div h4{
+    color: #47474798;
+    font-size: 12px;
+}
+
+.card_div h3{
+    color: #2c2c2c;
+    font-size: 14px;
+}
+
+.card_div p {
+    color: #2c2c2c;
+    font-size: 13px;
+}
+
+.container_card button {
+    bottom: -140px;
+    right: 50px;
+    position:absolute;
+    background-color:#2c2c2c00;
+    color: #2c2c2c;
+    font-size: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container_card button:hover {
+    color: #888888;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-methods {
+        display: block;
+        padding: 100px;
+        margin: 50px;
+    }
+    footer {
+        position: relative;
+        margin-top: 150px;
+    }
+
+    .container ul {
+        display: none;
+    }
+    #seta_baixo_img {
+        display: block;
+        cursor: pointer;
+    }
+
+    #checkbox:checked {
+        height:100vh;
+    }
+
+    .card {
+        zoom: 60%;
+    }
+}
